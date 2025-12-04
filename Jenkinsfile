@@ -26,10 +26,7 @@ pipeline {
 
         stage('Probar') {
             steps {
-                // Instalación de pandas agregada aquí
                 sh 'pip install pandas'
-
-                // Ejecutar pruebas con reporte junit
                 sh 'python3 -m pytest --junitxml=reports/results.xml'
             }
             post {
