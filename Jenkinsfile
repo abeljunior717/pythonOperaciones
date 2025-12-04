@@ -9,6 +9,7 @@ pipeline {
                 sh 'python3 --version'
                 sh 'pip3 --version'
                 sh 'pip install pytest'
+                sh 'pip install pandas'
             }
         }
 
