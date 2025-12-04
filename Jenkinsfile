@@ -27,6 +27,7 @@ pipeline {
         stage('Probar') {
             steps {
                 sh 'python -m pytest --junitxml=reports/results.xml'
+                sh 'pip install pandas'
             }
             post {
                 always {
